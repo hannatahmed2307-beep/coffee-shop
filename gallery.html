@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+    <style>
+                .mynav{
+            background-color:  rgb(251, 242, 231);
+        }
+        .mybtn {
+            color: brown;
+            border: 3px solid brown;
+            border-radius: 15px;
+            background-color: rgb(251, 242, 231);
+            font-weight: 500;
+            padding: 10px;
+        }
+
+        .mybtn:hover {
+            background-color: rgb(255, 251, 234);
+            border: 3px solid brown;
+            color: rgb(137, 93, 36);
+        }
+                        .about {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.171), rgba(0, 0, 0, 0.6)),
+                url(pexels-apgpotr-683039.jpg);
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .abtheading {
+            font-size: 50px;
+            font-weight: 700;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .gallery-item img {
+            width: 100%;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        /* Hover Effect */
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .mybg {
+            background-color: blanchedalmond;
+            color: brown;
+        }
+ .footer-custom {
+            background-color: rgba(0, 0, 0, 0.852);
+            color: #d1d1d1;
+            font-family: sans-serif;
+        }
+
+        .text-light-muted {
+            color: #a0b2b1;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+
+        .footer-links a {
+            color: #a0b2b1;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #ffffff;
+        }
+
+        .footer-custom {
+            background-image: linear-gradient(30deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 100px 100px;
+        }
+    </style>
+</head>
+
+<body>
+   <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg mynav">
+                <div class="container-fluid">
+                    <a class="navbar-brand fw-bold " href="#">HOT COFFEE</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">ABOUT US</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">OUR MENU</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    OUR FEATURE
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="about.html">About</a></li>
+                                    <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                                    <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">CONTACT</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                            <button class="btn mybtn" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+      <div class="container-fluid mt-2">
+    <div class="row">
+                  <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Our Gallery</li>
+            </ol>
+          </nav>
+    </div>
+  </div>
+
+        <div class="container-fluid">
+        <div class="row">
+            <div class="about">
+                <div class="logo"><img src="logo.png" alt="" style="width: 200px; height: 200px;"></div>
+                <h1 class="abtheading">GALLERY</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-lg-4 md-6 sm-12 mt-2">
+                <div class="gallery-item">
+                    <img src="pexels-conojeghuo-175711.jpg" class="img-fluid" alt="Gallery Image">
+                    <div class="overlay">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 md-6 sm-12 mt-2 ">
+                <div class="gallery-item">
+                    <img src="pexels-ngo-tr-ng-an-837314-1717772.jpg" class="img-fluid" alt="Gallery Image">
+                    <div class="overlay">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 md-6 sm-12 mt-2">
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/982612/pexels-photo-982612.jpeg" class="img-fluid" alt="Gallery Image">
+                    <div class="overlay">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 md-6 sm-12 mt-2">
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/1749303/pexels-photo-1749303.jpeg" class="img-fluid" alt="Gallery Image">
+                    <div class="overlay">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 md-6 sm-12 mt-2">
+                <div class="gallery-item">
+                    <img src="pexels-chevanon-302899.jpg" class="img-fluid" alt="Gallery Image">
+                    <div class="overlay">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 md-6 sm-12 mt-2">
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/261434/pexels-photo-261434.jpeg" class="img-fluid" alt="Gallery Image">
+                    <div class="overlay">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 md-6 sm-12 mt-2">
+                <div class="gallery-item">
+                    <img src="pexels-ifreestock-585752.jpg" class="img-fluid" alt="Gallery Image">
+                    <div class="overlay">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 md-6 sm-12 mt-2">
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/2101150/pexels-photo-2101150.jpeg "class="img-fluid" alt="Gallery Image">
+                    <div class="overlay">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 md-6 sm-12 mt-2">
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/2112749/pexels-photo-2112749.jpeg" class="img-fluid" alt="Gallery Image">
+                    <div class="overlay">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<footer class="footer-custom pt-5 text-white mt-5">
+    <div class="container pb-5">
+        <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="d-flex align-items-center mb-3">
+                    <img src="logo.png" alt="Logo" class="me-2" style="height: 30px;">
+                    <h4 class="text-white fw-bold mb-0">HOT COFFEE</h4>
+                </div>
+                <p class="text-light-muted mb-4 pe-lg-5">
+                    Empowering physicians with advanced multi-modal tools to improve treatment selection and patient outcomes.
+                </p>
+                <a href="#" class="btn btn-outline-light btn-sm mt-3">↑ BACK TO TOP</a>
+            </div>
+
+            <div class="col-lg-3 col-6 mb-4">
+                <h6 class="text-white fw-bold mb-3 border-bottom border-secondary pb-2 d-inline-block">Site Map</h6>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#" class="text-decoration-none text-light">Homepage</a></li>
+                    <li><a href="#" class="text-decoration-none text-light">Technology</a></li>
+                    <li><a href="#" class="text-decoration-none text-light">Ataraxis Breast</a></li>
+                    <li><a href="#" class="text-decoration-none text-light">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-6 mb-4">
+                <h6 class="text-white fw-bold mb-3 border-bottom border-secondary pb-2 d-inline-block">Legal</h6>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#" class="text-decoration-none text-light">Privacy Policy</a></li>
+                    <li><a href="#" class="text-decoration-none text-light">Terms of Services</a></li>
+                    <li><a href="#" class="text-decoration-none text-light">Lawyer's Corners</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</body>
+
+</html>
